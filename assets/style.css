@@ -5,7 +5,7 @@ body{
     text-align: center;
 }
 
-input[type="text"], input[type="password"] {
+input[type="text"], input[type="email"], input[type="password"] {
     outline: none;
     padding: 20px;
     display: block;
@@ -29,6 +29,19 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     background-color: rgba(52, 140, 241, 0.726);
+}
+
+header{
+    border-bottom: 2px solid cornflowerblue;
+    padding: 20px 0;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+header a{
+    text-decoration: none;
+    color: #333;
 }
 
 
