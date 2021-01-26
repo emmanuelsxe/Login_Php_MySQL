@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    require 'database.php'
+    require 'database.php';
 
     if (isset($_SESSION['user_id'])) {
         $records = $conn->prepare('SELECT ID, Email, Contrasena FROM USUARIOS WHERE ID = :id');
@@ -14,7 +14,6 @@
         if (count($results)  > 0) {
             $user = $results;
         }
-
     }
 ?>
 
@@ -39,6 +38,8 @@
     <br>
     <p>Bienvenido, estas en tu sesión</p>
     <a href="logOut.php">Cierra Sesión</a>
+    
+    
     <?php
         else:
     ?>
